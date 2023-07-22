@@ -3,5 +3,5 @@ sessions/
 dist/
 route.rest
 .dockerignore
-Dockerfile
 docker-compose.yml
+

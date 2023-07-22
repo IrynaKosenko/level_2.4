@@ -6,10 +6,10 @@ import cors from 'cors';
 const routerDB = express.Router();
 routerDB.use(express.json());
 
-routerDB.use(cors({
-        origin: 'http://localhost:8080',
-        credentials: true,                    // cookies allows
-    }));
+// routerDB.use(cors({
+//         origin: 'http://localhost:8080',
+//         credentials: true,                    // cookies allows
+//     }));
 
 routerDB.get('/api/v1/items', TaskControllerDB.getAllTask);
 routerDB.post('/api/v1/items', TaskControllerDB.createNewTask);

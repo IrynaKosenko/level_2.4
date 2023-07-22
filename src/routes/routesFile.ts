@@ -6,10 +6,10 @@ import cors from 'cors';
 const routerFile = express.Router();
 routerFile.use(express.json());
 
-routerFile.use(cors({
-    origin: 'http://localhost:8080',
-    credentials: true,                    // cookies allows
-}));
+// routerFile.use(cors({
+//     origin: 'http://localhost:8080',
+//     credentials: true,                    // cookies allows
+// }));
 
 routerFile.get('/api/v1/items', TaskControllerFile.getAllTask);
 routerFile.post('/api/v1/items', TaskControllerFile.createNewTask);

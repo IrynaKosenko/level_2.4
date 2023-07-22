@@ -6,10 +6,10 @@ import autorizationControllerSQL from '../controllers/SQLController/autorization
 const routerSQL = express.Router();
 routerSQL.use(express.json());
 
-routerSQL.use(cors({
-    origin: 'http://localhost:8080',
-    credentials: true,                    // cookies allows
-}));
+// routerSQL.use(cors({
+//     origin: 'http://localhost:8080',
+//     credentials: true,                    // cookies allows
+// }));
 
 routerSQL.get('/api/v1/items', taskControllerSQL.getAllTask);
 routerSQL.post('/api/v1/items', taskControllerSQL.createNewTask);
